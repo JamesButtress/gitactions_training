@@ -2,10 +2,10 @@ name: GitHub Action Demo
 on: 
   pull_request:
     branches:
-    - 'main'
+    - main
   push:
     branches:
-    - 'main'
+    - main
     paths-ignore: [.github/**]        
   schedule:
     - cron: '15 6 * * 0'  
