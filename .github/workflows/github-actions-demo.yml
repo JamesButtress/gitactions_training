@@ -2,10 +2,10 @@ name: GitHub Action Demo
 on: 
   pull_request:
     branches:
-    - 'master'
+    - 'main'
   push:
     branches:
-    - 'master'
+    - 'main'
     paths-ignore: [.github/**]        
   schedule:
     - cron: '15 6 * * 0'  
@@ -23,4 +23,5 @@ jobs:
       
       - name: List all files in repo
         run : |
-          echo "file in repo ${{ github.repository }}"
+          echo "file in repo ${{ github.repository }}:"
+          tree
