@@ -19,7 +19,7 @@ jobs:
           echo "Job triggered by: ${{ github.event_name }}"
           echo "Triggered from branch: ${{ github.ref }}"
           
-      - uses: actions/checkout@latest
+      - uses: actions/checkout@v3
       
       - name: List all files in repo
         run : |
